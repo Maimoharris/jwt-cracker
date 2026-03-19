@@ -1,4 +1,4 @@
-# 🔐 get_jwt_secret.py
+# 🔐 JWT-Secret Cracker
 
 ![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
