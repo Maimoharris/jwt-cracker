@@ -31,8 +31,7 @@ This tool attempts to recover the secret key used to sign HMAC-based JWT tokens 
 ---
 
 ## 📦 Installation
-
-```bash
+python
 # Clone the repository
 git clone [https://github.com/yourusername/get_jwt_secret.git](https://github.com/yourusername/get_jwt_secret.git)
 
@@ -42,7 +41,7 @@ cd get_jwt_secret
 # Install dependencies
 pip install pyjwt
 
-🚀 Usage
+##🚀 Usage
 Bash
 
 python3 get_jwt_secret.py <JWT_TOKEN> <WORDLIST> -t <THREADS>
@@ -52,13 +51,13 @@ Bash
 
 python3 get_jwt_secret.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9... jwt.secrets.list -t 20
 
-⚙️ Arguments
+##⚙️ Arguments
 Argument	Description
 token	The target JWT token string
 wordlist	Path to your secret wordlist file
 -t, --threads	Number of concurrent threads (Default: 10)
 -v, --verbose	Enable to show failed attempts (useful for debugging)
-🧠 How It Works
+##🧠 How It Works
 
     Parsing: Extracts the JWT header to determine the hashing algorithm.
 
@@ -68,7 +67,7 @@ wordlist	Path to your secret wordlist file
 
     Success: If a secret works, it is printed to the console and the process terminates.
 
-🚀 Future Roadmap
+##🚀 Future Roadmap
 
     [ ] Multiprocessing Support: Utilizing true CPU scaling for massive wordlists.
 
@@ -78,7 +77,7 @@ wordlist	Path to your secret wordlist file
 
     [ ] GPU Acceleration: Integration for high-speed cracking.
 
-👨‍💻 Author
+##👨‍💻 Author
 
 Maimo Harris
 
@@ -86,13 +85,12 @@ Maimo Harris
 
     WhatsApp: +237 680 226 898
 
-⚠️ Disclaimer
+##⚠️ Disclaimer
 
 This tool is intended for authorized penetration testing and educational purposes only. Do not use this tool against systems you do not own or have explicit, written permission to test. The author is not responsible for any misuse or damage caused by this tool.
-⭐ Support
+##⭐ Support
 
 If this tool helped you find a bug or win a CTF, please consider giving it a Star and forking the repo!
-
 
 ---
 
